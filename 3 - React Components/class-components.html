@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--LIBRARIES-->
+        <!--REACT-->
+        <script src="https://unpkg.com/react@15.7.0/dist/react.js"></script>
+        <!--REACT DOM-->
+        <script src="https://unpkg.com/react-dom@15.7.0/dist/react-dom.js"></script>
+        <!--BABEL-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <title> React | Class Components </title>
+</head>
+
+<body>
+    
+    <div id="app"> React has not rendered yet! </div>
+
+    <script type="text/babel">
+
+    //Class Component
+    class DaysOfTheWeek extends React.Component
+    {
+        render()
+        {
+            return(
+              <h5> Days of the Week : Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday. </h5>
+            )
+        }
+    }
+
+    //Class Component
+    class MonthsOfTheYear extends React.Component
+    {
+        render()
+        {
+            return(
+              <h5> Months of the Year : January, February, March, April, May, June, July, August, September, October, November, December. </h5> 
+            )
+        }
+    }
+
+    //Class Component
+    class ColorSpectrum extends React.Component
+    {
+        render()
+        {
+            return(
+              <h5> Color Spectrum : Red, Orange, Yellow, Green, Blue, Indigo, Violet. </h5>
+            )
+        }
+    }
+    
+    ReactDOM.render
+    (
+        <div>
+        <h4> Class Components </h4>
+        <DaysOfTheWeek/>
+        <MonthsOfTheYear/>
+        <ColorSpectrum/>
+        </div>,
+        document.getElementById("app")
+    );
+    
+    </script>
+
+</body>
+
+</html>

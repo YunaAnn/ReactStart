@@ -11,3 +11,4 @@ Menu:
     - index.html
 3. 3 - React Components
     - stateless-functional-components.html - Stateless Functional Components    
+    - class-components.html - Class Components
