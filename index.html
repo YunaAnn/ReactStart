@@ -4,15 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--LIBRARIES-->
+        <!--REACT-->
+        <script src="https://unpkg.com/react@15.7.0/dist/react.js"></script>
+        <!--REACT DOM-->
+        <script src="https://unpkg.com/react-dom@15.7.0/dist/react-dom.js"></script>
+        <!--BABEL-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
     <title> React | MENU </title>
 </head>
 
 <body>
 
-    <h1> REACT | Menu </h1>
-    <h3> 1 - Hello World </h3>
-        <li> <a target="_blank" rel="noopener noreferrer" href="1 - Hello World/hello-world.html"> Hello World </a> </li>
-        <li> <a target="_blank" rel="noopener noreferrer" href="1 - Hello World/hello-world-used-variables.html"> Hello World (used variables) </a> </li>
+    <div id="app"> React has not rendered yet! </div>
+
+    <script type="text/babel">
+
+        ReactDOM.render
+        (
+            <div>
+                <h1> REACT | Menu </h1>
+                    <h3> 1 - Hello World </h3>
+                        <li> <a target="_blank" rel="noopener noreferrer" href="1 - Hello World/hello-world.html"> 'Hello World' app </a> </li>
+                        <li> <a target="_blank" rel="noopener noreferrer" href="1 - Hello World/hello-world-used-variables.html"> 'Hello World' app - used variables </a> </li>
+                        <li> <a target="_blank" rel="noopener noreferrer" href="1 - Hello World/hello-world-pure-JS.html"> 'Hello World' app - pure JS (no Babel) </a> </li>
+                    <h3> 2 - Outputting Multiple Elements </h3>
+                        <li> <a target="_blank" rel="noopener noreferrer" href="2 - Outputting Multiple Elements/index.html"> Outputting Multiple Elements </a> </li>        
+            </div>,
+            document.getElementById("app")
+        ); 
+    
+   </script>         
 
 </body>
 
