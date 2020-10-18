@@ -9,3 +9,5 @@ Menu:
     - hello-world-pure-JS.html - 'Hello World' app - pure JS (no Babel)
 2. 2 - Outputting Multiple Elements
     - index.html
+3. 3 - React Components
+    - stateless-functional-components.html - Stateless Functional Components    
