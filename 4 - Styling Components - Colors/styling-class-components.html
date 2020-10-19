@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LIBRARIES-->
+        <!--REACT-->
+        <script src="https://unpkg.com/react@15.7.0/dist/react.js"></script>
+        <!--REACT DOM-->
+        <script src="https://unpkg.com/react-dom@15.7.0/dist/react-dom.js"></script>
+        <!--BABEL-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="../main.css" type="text/css"/>
+        <link rel="stylesheet" href="colors.css" type="text/css"/>
+    <title> React | Styling Class Components </title>
+</head>
+
+<body>
+    
+  <div id="app"> React has not rendered yet! </div>
+
+    <script type="text/babel">
+
+      class Pink extends React.Component
+      {
+        render()
+        {
+            return(
+              <h1 className="pink"> #ff6699 </h1>
+            )
+        }
+      }
+
+      class Red extends React.Component
+      {
+        render()
+        {
+            return(
+              <h1  className="red"> #ff0000 </h1>
+            )
+        }
+      }
+
+      class Blue extends React.Component
+      {
+        render()
+        {
+            return(
+              <h1 className="blue"> #0099cc </h1>
+            )
+        }
+      }
+
+      class Green extends React.Component
+      {
+        render()
+        {
+            return(
+              <h1 className="green"> #00b300 </h1>
+            )
+        }
+      }
+
+      class Yellow extends React.Component
+      {
+        render()
+        {
+            return(
+              <h1  className="yellow"> #ffcc00 </h1>
+            )
+        }
+      }
+
+      class Orange extends React.Component
+      {
+        render()
+        {
+            return(
+              <h1 className="orange"> #ff6600 </h1>
+            )
+        }
+      }
+
+      ReactDOM.render
+      (
+        <div>
+        <h1> Colors | Styling Class Components </h1>
+          <Pink/>
+          <Red/>
+          <Blue/>
+          <Green/>
+          <Yellow/>
+          <Orange/>
+        </div>,
+        document.getElementById("app")
+      );
+
+    </script>
+
+</body>
+
+</html>
